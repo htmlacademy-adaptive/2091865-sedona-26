@@ -16,16 +16,16 @@
       <div class="navigation__wrapper">
         <ul class="navigation__list">
           <li class="navigation__item navigation__item--current">
-            <a class="navigation__link" href="#">Главная</a>
+            <a class="navigation__link" href="./index.html">Главная</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#.html">Фото и видео</a>
+            <a class="navigation__link" href="./catalog.html">Фото и видео</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="#">Форма Отзыва</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">HTML ACADEMY</a>
+            <a class="navigation__link" href="./htmlacademy.ru">HTML ACADEMY</a>
           </li>
         </ul>
       </div>
@@ -34,7 +34,7 @@
   <main class="form-container">
     <h1 class="visually-hidden">Форма для вашего отзыва</h1>
     <div class="hero">
-      <img class="hero__image" src="#" width="" height="" alt="Седона.">
+      <img class="hero__image" src="#" width="229" height="39" alt="Седона.">
     </div>
     <section class="feedback">
       <header class="feedback__header">
@@ -47,11 +47,11 @@
         <fieldset class="feedback__container">
           <legend class="feedback__title">Представьтесь:</legend>
           <p class="feedback__field-group field">
-            <label class="field__label" for="user-name">ИМЯ*:</label>
+            <label class="field__label" for="user-name">Имя*:</label>
             <input class="field__input" type="text" id="user-name" placeholder="Пётр" required>
           </p>
           <p class="feedback__field-group field">
-            <label class="field__label" for="sure-name">ФАМИЛИЯ*:</label>
+            <label class="field__label" for="sure-name">Фамилия*:</label>
             <input class="field__input" type="text" id="sure-name" placeholder="Пустота" required>
           </p>
           <p class="feedback__field-group field">
@@ -64,20 +64,20 @@
           <p class="feedback__field-group field-contacts">
             <label class="fiel-contacts__label" for="contacts-phone">Контактный телефон*:</label>
             <input class="field-contacts__input" type="text" id="contacts-phone" placeholder="Введите телефон" required>
-            <button class="field-contacts__button-phone button" type="button">
-              <span class="field-contacts__phone-image">Телефон.</span>
-            </button>
+            <span class="field-contacts__image-phone-wrapper">
+              <span class="field-contacts__image-phone">Телефон.</span>
+            </span>
           </p>
           <p class="feedback__field-group field-contacts">
             <label class="field-contacts__label" for="mail">Электронная почта*:</label>
             <input class="field-contacts__input" type="text" id="mail" placeholder="Введите e-mail" required>
-            <button class="field-contacts__button-mail button" type="button">
-              <span class="field-contacts__mail-image">Почта.</span>
-            </button>
+            <span class="field-contacts__image-mail-wrapper">
+              <span class="field-contacts__image-mail">Почта.</span>
+            </span>
           </p>
         </fieldset>
         <fieldset class="feedback__container">
-          <legend class="feedback__title">ВАше Общее впечатление:</legend>
+          <legend class="feedback__title">Ваше Общее впечатление:</legend>
           <p class="feedback__field-group radio">
             <label class="radio__label">
               <input class="radio__input" type="radio" name="impression" value="positive" checked>
@@ -97,7 +97,7 @@
           </p>
         </fieldset>
         <fieldset class="feedback__container">
-          <legend class="feedback__title">посещенные достопримечательности:</legend>
+          <legend class="feedback__title">Посещенные достопримечательности:</legend>
           <p class="feedback__field-group checkbox">
             <label class="checkbox__label">
               <input class="checkbox__input" type="checkbox" name="bridge" checked>
@@ -129,7 +129,7 @@
               rows="" placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
           </p>
-          <button class="feedback__submit-button button" type="submit">Отправить отзыв></button>
+          <button class="feedback__submit-button button" type="submit">Отправить отзыв</button>
           <span class="feedback__note">* — обязательные поля</span>
         </fieldset>
       </form>
