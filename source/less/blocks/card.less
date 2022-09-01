@@ -1,16 +1,30 @@
+.card__container {
+  padding: 24px 20px 25px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.card__wrapper-inner {
+  padding-top: 15px;
+  padding-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: #f2f2f2;
+    padding-top: 22px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+  }
+}
+
 .card__image {
   display: block;
   max-width: 100%;
   object-fit: cover;
-}
-
-.card__wrapper-description {
-  padding-top: 15px;
-  padding-bottom: 11px;
-}
-
-.card__wrapper {
-  padding: 24px 20px 25px 20px;
 }
 
 .card__link {
@@ -25,7 +39,6 @@
   font-size: 14px;
   line-height: 21px;
   margin: 0;
-  margin-bottom: 8px;
 }
 
 .card__author-photo {
@@ -38,6 +51,10 @@
   padding: 0;
   background-color: #ffffff;
   margin-right: 10px;
+
+  @media (min-width: @tablet-width) {
+    background-color: #f2f2f2;
+  }
 }
 
 .card__like-icon {

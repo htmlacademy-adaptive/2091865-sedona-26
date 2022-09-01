@@ -1,6 +1,19 @@
+.page-footer__wrapper {
+  @media (min-width: @tablet-width) {
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .page-footer__hashtag {
   padding: 28px 78px 33px 76px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .page-footer__social {
@@ -11,4 +24,8 @@
 .page-footer__copyright {
   padding: 40px 96px 23px 80px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
