@@ -1,25 +1,29 @@
 .navigation {
-  background-color: #81b3d2;
-  position: relative;
-  display: none;
-}
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
 
-.navigation__toggle {
-  width: 23px;
-  margin-left: 277px;
-  position: absolute;
+  @media (min-width: @tablet-width) {
+    background-color: #ffffff;
+    color: #000000;
+  }
 }
 
 .navigation__list {
+  background-color: #81b3d2;
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0 auto;
+    background: #ffffff;
+    color: #000000;
+  }
 }
 
-.navigation__item {
-  text-align: center;
-  color: #ffffff;
-}
 
 .navigation__link {
   display: block;
@@ -32,4 +36,14 @@
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.navigation__item:nth-child(4n+3) {
+  grid-column: 4/5;
 }

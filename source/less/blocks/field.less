@@ -60,4 +60,19 @@
   background: #f2f2f2;
   padding: 16px;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 768px;
+  }
+}
+
+.field {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    width: 430px;
+  }
 }
