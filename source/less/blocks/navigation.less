@@ -1,5 +1,7 @@
 .navigation {
-  display: none;
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
 
   @media (min-width: @tablet-width) {
     background-color: #ffffff;
