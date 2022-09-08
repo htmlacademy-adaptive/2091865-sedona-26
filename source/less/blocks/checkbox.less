@@ -1,17 +1,22 @@
 .checkbox {
-  display: flex;
-  flex-direction: column;
-  gap: 36px;
+  @media (max-width: @mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
 
   @media (min-width: @tablet-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 480px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 224px 224px;
+    column-gap: 32px;
+    row-gap: 16px;
   }
 
   @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
     width: 960px;
+    gap: 64px;
   }
 }
 
@@ -20,4 +25,40 @@
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+  position: relative;
+  padding-left: 62px;
+  height: 46px;
+  cursor: pointer;
+}
+
+.checkbox__input[type="checkbox"]:checked + .checkbox__mark::after {
+  content: "";
+  background-image: url("../../../source/img/tick.svg");
+  width: 22px;
+  height: 16px;
+  left: 26.09%;
+  right: 26.09%;
+  top: 32.61%;
+  bottom: 32.61%;
+  position: absolute;
+}
+
+.checkbox__mark {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  &:hover {
+    background: #e5e5e5;
+  }
+
+  &:active {
+    background: #d5d5d5;
+  }
 }
