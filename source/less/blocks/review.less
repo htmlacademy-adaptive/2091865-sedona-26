@@ -1,9 +1,16 @@
 .review__header-wrapper {
-  padding: 36px 20px 28px 20px;
+  @media (max-width: @mobile-width-only) {
+    padding: 36px 20px 28px 20px;
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  }
 
   @media (min-width: @tablet-width) {
     padding: 64px 166px 102px 166px;
     margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 115px 382px 67px 382px;
   }
 }
 

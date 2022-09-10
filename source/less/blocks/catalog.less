@@ -10,7 +10,10 @@
 }
 
 .catalog__header-wrapper {
-  padding: 37px 20px 25px 20px;
+  @media (max-width: @mobile-width-only) {
+    padding: 37px 20px 25px 20px;
+    border-bottom: 1px solid #e5e5e5;
+  }
 
   @media (min-width: @tablet-width) {
     max-width: 440px;
@@ -36,7 +39,7 @@
 }
 
 .catalog__list-wrapper {
-  @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     padding-right: 60px;
     padding-left: 60px;
   }

@@ -60,9 +60,11 @@
           <ul class="catalog__list">
             <li class="catalog__item card">
               <div class="card__container">
-                <a class="card__link" href="#">
-                  <img class="card__image" src="./img/card-1.jpg" alt="Просторы Седоны на фоне оранжевого заката.">
-                </a>
+                <div class="card__image-wrapper">
+                  <a class="card__link" href="#">
+                    <img class="card__image" src="./img/card-1.jpg" alt="Просторы Седоны на фоне оранжевого заката.">
+                  </a>
+                </div>
                 <div class="card__wrapper-inner">
                   <div class="card__wrapper-description">
                     <a class="card__link" href="#">
@@ -73,11 +75,10 @@
                   <div>
                     <button class="card__button-like" type="button">
                       <span class="visually-hidden">Мне нравится.</span>
-                      <svg class="card__like-icon" width="23" height="21" aria-hidden="true" focusable="false"
+                      <svg class="card__icon" width="23" height="21" aria-hidden="true" focusable="false"
                         fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 21">
-                        <path opacity=".3"
-                          d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
-                          fill="#000" />
+                        <path class="card__like-icon" opacity=".3"
+                          d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" fill="#000"/>
                       </svg>
                     </button>
                     <span class="card__counter card__counter--number">1350</span>
@@ -100,9 +101,9 @@
                   <div class="card__wrapper-like">
                     <button class="card__button-like" type="button">
                       <span class="visually-hidden">Мне нравится.</span>
-                      <svg class="card__like-icon" width="23" height="21" aria-hidden="true" focusable="false"
+                      <svg class="card__icon" width="23" height="21" aria-hidden="true" focusable="false"
                         fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 21">
-                        <path opacity=".3"
+                        <path class="card__like-icon" opacity=".3"
                           d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
                           fill="#000" />
                       </svg>
@@ -128,9 +129,9 @@
                   <div class="card__wrapper-like">
                     <button class="card__button-like" type="button">
                       <span class="visually-hidden">Мне нравится.</span>
-                      <svg class="card__like-icon" width="23" height="21" aria-hidden="true" focusable="false"
+                      <svg class="card__icon" width="23" height="21" aria-hidden="true" focusable="false"
                         fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 21">
-                        <path opacity=".3"
+                        <path class="card__like-icon" opacity=".3"
                           d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
                           fill="#000" />
                       </svg>
@@ -156,9 +157,9 @@
                   <div class="card__wrapper-like">
                     <button class="card__button-like" type="button">
                       <span class="visually-hidden">Мне нравится.</span>
-                      <svg class="card__like-icon" width="23" height="21" aria-hidden="true" focusable="false"
+                      <svg class="card__icon" width="23" height="21" aria-hidden="true" focusable="false"
                         fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 21">
-                        <path opacity=".3"
+                        <path class="card__like-icon" opacity=".3"
                           d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
                           fill="#000" />
                       </svg>
@@ -207,7 +208,7 @@
                 <svg class="social__icon" width="22" height="18" aria-hidden="true" focusable="false" fill="none"
                   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 18">
                   <path
-                    d="m21.44 1.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L6.01 10.32 1.26 8.82C.22 8.5.21 7.8 1.48 7.3L20.1.11c.87-.32 1.62.2 1.34 1.51Z">
+                    d="m21.44 1.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L6.01 10.32 1.26 8.82C.22 8.5.21 7.8 1.48 7.3L20.1.11c.87-.32 1.62.2 1.34 1.51Z" />
                 </svg>
                 <span class="visually-hidden">Телеграмм.</span>
               </a>
@@ -217,9 +218,9 @@
                 <svg class="social__icon" width="20" height="14" aria-hidden="true" focusable="false" fill="none"
                   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14">
                   <path
-                    d="M17.18 0H2.81C1.31 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.81 14h14.37A2.8 2.8 0 0 0 20 11.2V2.8c.1-1.5-1.2-2.8-2.8-2.8ZM7.03 10.4V3.6L13.87 7l-6.84 3.4Z"
-                    </svg>
-                    <span class="visually-hidden">Ютуб.</span>
+                    d="M17.18 0H2.81C1.31 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.81 14h14.37A2.8 2.8 0 0 0 20 11.2V2.8c.1-1.5-1.2-2.8-2.8-2.8ZM7.03 10.4V3.6L13.87 7l-6.84 3.4Z" />
+                </svg>
+                <span class="visually-hidden">Ютуб.</span>
               </a>
             </li>
           </ul>

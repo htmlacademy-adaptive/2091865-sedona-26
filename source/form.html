@@ -58,7 +58,7 @@
           </div>
         </header>
         <form class="review__form feedback" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="feedback__wrapper-flex">
+          <div class="feedback__wrapper-grid">
             <fieldset class="feedback__container feedback__container--name">
               <legend class="feedback__title">Представьтесь:</legend>
               <p class="feedback__field-group field">
@@ -77,15 +77,31 @@
             <fieldset class="feedback__container feedback__container--contacts">
               <legend class="feedback__title">Контактная информация:</legend>
               <p class="feedback__field-group field">
-                <label class="field__label" for="contacts-phone">Контактный телефон*:</label>
-                <input class="field__contacts-input" type="text" id="contacts-phone" placeholder="Введите телефон"
-                  required>
-                <span class="field__image-phone"></span>
+                <label class="field__label" for="contacts-phone">Контактный телефон*:
+                  <input class="field__contacts-input" type="text" id="contacts-phone" placeholder="Введите телефон"
+                    required>
+                  <span class="field__contacts-input-phone">
+                    <svg class="field__contacts-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z"
+                        fill="#010101" />
+                    </svg>
+                  </span>
+                </label>
               </p>
               <p class="feedback__field-group field">
-                <label class="field__label" for="mail">Электронная почта*:</label>
-                <input class="field__contacts-input" type="text" id="mail" placeholder="Введите e-mail" required>
-                <span class="field__image-mail"></span>
+                <label class="field__label" for="mail">Электронная почта*:
+                  <input class="field__contacts-input" type="text" id="mail" placeholder="Введите e-mail" required>
+                  <span class="field__contacts-mail">
+                    <svg class="field__contacts-icon" width="16" height="12" viewBox="0 0 16 12" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z"
+                        fill="black" />
+                    </svg>
+                  </span>
+                </label>
               </p>
             </fieldset>
           </div>
@@ -93,44 +109,44 @@
             <legend class="feedback__title">Ваше Общее впечатление:</legend>
             <p class="feedback__field-group radio">
               <label class="radio__label">
-                <input class="radio__input" type="radio" name="impression" value="positive" checked>
+                <input class="radio__input visually-hidden" type="radio" name="impression" value="positive" checked>
                 Скорее положительное
-                <span class="radio__icon"></span>
+                <span class="radio__mark"></span>
               </label>
               <label class="radio__label">
-                <input class="radio__input" type="radio" name="impression" value="negative">
+                <input class="radio__input visually-hidden" type="radio" name="impression" value="negative">
                 Скорее отрицательное
-                <span class="radio__icon"></span>
+                <span class="radio__mark"></span>
               </label>
               <label class="radio__label">
-                <input class="radio__input" type="radio" name="impression" value="neutral">
+                <input class="radio__input visually-hidden" type="radio" name="impression" value="neutral">
                 Затрудняюсь ответить
-                <span class="radio__icon"></span>
+                <span class="radio__mark"></span>
               </label>
             </p>
           </fieldset>
           <fieldset class="feedback__container feedback__container--attraction">
-            <legend class="feedback__title">Посещенные достопримечательности:</legend>
+            <legend class="feedback__title feedback__title--attraction">Посещенные достопримечательности:</legend>
             <p class="feedback__field-group checkbox">
               <label class="checkbox__label">
-                <input class="checkbox__input" type="checkbox" name="bridge" checked>
+                <input class="checkbox__input visually-hidden" type="checkbox" name="bridge" checked>
                 Мост Дьявола
-                <span class="checkbox__icon"></span>
+                <span class="checkbox__mark"></span>
               </label>
               <label class="checkbox__label">
-                <input class="checkbox__input" type="checkbox" name="mountain" checked>
+                <input class="checkbox__input visually-hidden" type="checkbox" name="mountain" checked>
                 Гора-Колокол
-                <span class="checkbox__icon"></span>
+                <span class="checkbox__mark"></span>
               </label>
               <label class="checkbox__label">
-                <input class="checkbox__input" type="checkbox" name="park" checked>
+                <input class="checkbox__input visually-hidden" type="checkbox" name="park" checked>
                 Слайд-парк
-                <span class="checkbox__icon"></span>
+                <span class="checkbox__mark"></span>
               </label>
               <label class="checkbox__label">
-                <input class="checkbox__input" type="checkbox" name="rocks">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="rocks">
                 Красные скалы
-                <span class="checkbox__icon"></span>
+                <span class="checkbox__mark"></span>
               </label>
             </p>
           </fieldset>
@@ -138,7 +154,7 @@
             <legend class="feedback__title">Опишите свои эмоции:</legend>
             <p class="feedback__field-group field">
               <label class="field__label" for="usser-message">
-                <textarea class="field__textarea" name="review" id="usser-message" cols="" rows=""
+                <textarea class="field__textarea" name="review" id="usser-message"
                   placeholder="Опишите подробно все свои восторги"></textarea>
               </label>
             </p>
@@ -172,7 +188,7 @@
                   <svg class="social__icon" width="22" height="18" aria-hidden="true" focusable="false" fill="none"
                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 18">
                     <path
-                      d="m21.44 1.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L6.01 10.32 1.26 8.82C.22 8.5.21 7.8 1.48 7.3L20.1.11c.87-.32 1.62.2 1.34 1.51Z">
+                      d="m21.44 1.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L6.01 10.32 1.26 8.82C.22 8.5.21 7.8 1.48 7.3L20.1.11c.87-.32 1.62.2 1.34 1.51Z" />
                   </svg>
                   <span class="visually-hidden">Телеграмм.</span>
                 </a>
@@ -182,9 +198,9 @@
                   <svg class="social__icon" width="20" height="14" aria-hidden="true" focusable="false" fill="none"
                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14">
                     <path
-                      d="M17.18 0H2.81C1.31 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.81 14h14.37A2.8 2.8 0 0 0 20 11.2V2.8c.1-1.5-1.2-2.8-2.8-2.8ZM7.03 10.4V3.6L13.87 7l-6.84 3.4Z"
-                      </svg>
-                      <span class="visually-hidden">Ютуб.</span>
+                      d="M17.18 0H2.81C1.31 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.81 14h14.37A2.8 2.8 0 0 0 20 11.2V2.8c.1-1.5-1.2-2.8-2.8-2.8ZM7.03 10.4V3.6L13.87 7l-6.84 3.4Z" />
+                  </svg>
+                  <span class="visually-hidden">Ютуб.</span>
                 </a>
               </li>
             </ul>
