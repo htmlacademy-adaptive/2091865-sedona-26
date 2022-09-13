@@ -73,8 +73,14 @@
                   <p class="advantages__number">— №1 —</p>
                   <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
-                <img class="advantages__image" src="./img/advantages-photo-city.png"
-                  alt="Здания города Седоны на фоне гор.">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./img/advantages-city-desktop.jpg 1x, ./img/advantages-city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="./img/advantages-city-tablet.jpg 1x, ./img/advantages-city-tablet@2x.jpg 2x">
+                  <img class="advantages__image-city" src="./img/advantages-city.jpg" width="320" height="260"
+                    srcset="./img/advantages-city@2x.jpg 2x" alt="Здания города Седоны на фоне гор.">
+                </picture>
               </div>
               <ul class="advantages__sublist">
                 <li class="advantages__sublist-item advantages__sublist-item--house">
@@ -99,8 +105,15 @@
                 <p class="advantages__number">— №2 —</p>
                 <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-              <img class="advantages__image" src="./img/photo-bridg.jpg"
-                alt="Узкая полоска из камня соединяющая две скалы по которой можно пройтись.">
+              <pictire>
+                <source media="(min-width: 1200px)"
+                  srcset="./img/advantages-bridge-desktop.jpg 1x, ./img/advantages-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./img/advantages-bridge-tablet.jpg 1x, ./img/advantages-bridge-tablet@2x.jpg 2x">
+                <img class="advantages__image-bridge" src="./img/advantages-bridge.jpg" width="320" height="260"
+                  srcset="./img/advantages-bridge@2x.jpg 2x"
+                  alt="Узкая полоска из камня соединяющая две скалы по которой можно пройтись.">
+              </pictire>
             </li>
             <li class="advantages__item">
               <div class="advantages__wrapper-square">
@@ -165,7 +178,7 @@
                 <svg class="social__icon" width="22" height="18" aria-hidden="true" focusable="false" fill="none"
                   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 18">
                   <path
-                    d="m21.44 1.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L6.01 10.32 1.26 8.82C.22 8.5.21 7.8 1.48 7.3L20.1.11c.87-.32 1.62.2 1.34 1.51Z"/>
+                    d="m21.44 1.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L6.01 10.32 1.26 8.82C.22 8.5.21 7.8 1.48 7.3L20.1.11c.87-.32 1.62.2 1.34 1.51Z" />
                 </svg>
                 <span class="visually-hidden">Телеграмм.</span>
               </a>
@@ -175,9 +188,9 @@
                 <svg class="social__icon" width="20" height="14" aria-hidden="true" focusable="false" fill="none"
                   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14">
                   <path
-                    d="M17.18 0H2.81C1.31 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.81 14h14.37A2.8 2.8 0 0 0 20 11.2V2.8c.1-1.5-1.2-2.8-2.8-2.8ZM7.03 10.4V3.6L13.87 7l-6.84 3.4Z"/>
-                    </svg>
-                    <span class="visually-hidden">Ютуб.</span>
+                    d="M17.18 0H2.81C1.31 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.81 14h14.37A2.8 2.8 0 0 0 20 11.2V2.8c.1-1.5-1.2-2.8-2.8-2.8ZM7.03 10.4V3.6L13.87 7l-6.84 3.4Z" />
+                </svg>
+                <span class="visually-hidden">Ютуб.</span>
               </a>
             </li>
           </ul>
