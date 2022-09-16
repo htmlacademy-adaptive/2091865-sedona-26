@@ -2,7 +2,6 @@
   width: 100%;
 
   @media (max-width: @mobile-width-only) {
-    display: none;
     position: absolute;
   }
 
@@ -17,6 +16,12 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (max-width: @mobile-width-only) {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+  }
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -55,11 +60,12 @@
     line-height: 21px;
 
     &:hover {
-      opacity: 60%;
+      color: #81b3d2;
     }
 
     &:active {
-      opacity: 30%;
+      color: #000000;
+      opacity: 0.3;
     }
   }
 }
@@ -109,6 +115,7 @@
   bottom: 0;
   left: 0;
   margin: auto;
+  fill: #ffffff;
 
   @media (min-width: @tablet-width) {
     display: none;

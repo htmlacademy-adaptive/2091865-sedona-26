@@ -33,7 +33,7 @@
 
 .checkbox__input[type="checkbox"]:checked + .checkbox__mark::after {
   content: "";
-  background-image: url("../../../source/img/tick.svg");
+  background-image: url("../../img/tick.svg");
   width: 22px;
   height: 16px;
   left: 26.09%;
@@ -41,6 +41,10 @@
   top: 32.61%;
   bottom: 32.61%;
   position: absolute;
+
+  &:active {
+    fill: rgba(51, 51, 51, 0.3);
+  }
 }
 
 .checkbox__mark {
