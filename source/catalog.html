@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -63,6 +69,11 @@
                 <div class="card__image-wrapper">
                   <a class="card__link" href="#">
                     <picture>
+                      <source type="image/webp" media="(min-width: 1200px)"
+                        srcset="./img/card-1-desktop.webp 1x, ./img/card-1-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="./img/card-1-tablet.webp 1x, ./img/card-1-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset=".img/card-1.webp 1x, ./img/card-1@2x.webp 2x">
                       <source media="(min-width: 1200px)"
                         srcset="./img/card-1-desktop.jpg 1x, ./img/card-1-desktop@2x.jpg 2x">
                       <source media="(min-width: 768px)"
@@ -79,7 +90,7 @@
                     </a>
                     <p class="card__author-photo">Автор фото: Борис</p>
                   </div>
-                  <div>
+                  <div class="card__wrapper-like">
                     <button class="card__button-like" type="button">
                       <span class="visually-hidden">Мне нравится.</span>
                       <svg class="card__icon" width="23" height="21">
@@ -95,6 +106,11 @@
               <div class="card__container">
                 <a class="card__link" href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="./img/card-2-desktop.webp 1x, ./img/card-2-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="./img/card-2-tablet.webp 1x, ./img/card-2-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset=".img/card-2.webp 1x, ./img/card-2@2x.webp 2x">
                     <source media="(min-width: 1200px)"
                       srcset="./img/card-2-desktop.jpg 1x, ./img/card-2-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)"
@@ -126,6 +142,11 @@
               <div class="card__container">
                 <a class="card__link" href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="./img/card-3-desktop.webp 1x, ./img/card-3-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="./img/card-3-tablet.webp 1x, ./img/card-3-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset=".img/card-3.webp 1x, ./img/card-3@2x.webp 2x">
                     <source media="(min-width: 1200px)"
                       srcset="./img/card-3-desktop.jpg 1x, ./img/card-3-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)"
@@ -157,6 +178,11 @@
               <div class="card__container">
                 <a class="card__link" href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="./img/card-4-desktop.webp 1x, ./img/card-4-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="./img/card-4-tablet.webp 1x, ./img/card-4-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset=".img/card-4.webp 1x, ./img/card-4@2x.webp 2x">
                     <source media="(min-width: 1200px)"
                       srcset="./img/card-4-desktop.jpg 1x, ./img/card-4-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)"
@@ -197,16 +223,21 @@
         </div>
         <div class="presentation__image-wrapper">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="./img/presentation-desktop.webp 1x, ./img/presentation-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="./img/presentation-tablet.webp 1x, ./img/presentation-tablet@2x.webp 2x">
+            <source type="image/webp" srcset=".img/presentation.webp 1x, ./img/presentation@2x.webp 2x">
             <source media="(min-width: 1200px)"
               srcset="./img/presentation-desktop.jpg 1x, ./img/presentation-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
               srcset="./img/presentation-tablet.jpg 1x, ./img/presentation-tablet@2x.jpg 2x">
             <img class="presentation__image" src="./img/presentation.jpg" width="280" height="177"
               srcset="./img/presentation@2x.jpg 2x" alt="Видеопрезентация Седоны.">
-            <svg class="presentation__icon" width="48" height="55">
-              <use xlink:href="./img/sprite.svg#play"></use>
-            </svg>
           </picture>
+          <svg class="presentation__icon" width="48" height="55">
+            <use xlink:href="./img/sprite.svg#play"></use>
+          </svg>
         </div>
       </article>
     </main>
@@ -219,7 +250,8 @@
           <h2 class="visually-hidden">Мы в соцсетях</h2>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="HTML Academy вконтакте.">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"
+                aria-label="HTML Academy вконтакте.">
                 <svg class="social__icon" width="24" height="14">
                   <use xlink:href="./img/sprite.svg#vkontakte"></use>
                 </svg>
@@ -227,7 +259,8 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" aria-label="HTML Academy в телеграмме.">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"
+                aria-label="HTML Academy в телеграмме.">
                 <svg class="social__icon" width="22" height="18">
                   <use xlink:href="./img/sprite.svg#telegram"></use>
                 </svg>
@@ -235,7 +268,8 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" aria-label="HTML Academy на ютубе.">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+                aria-label="HTML Academy на ютубе.">
                 <svg class="social__icon" width="24" height="14">
                   <use xlink:href="./img/sprite.svg#youtube"></use>
                 </svg>
@@ -244,10 +278,10 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy.">
-            <svg class="copyright__logo" width="27" height="35">
+        <div class="page-footer__copyright">
+          <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy.">
+            <span class="copyright__text">Разработано</span>
+            <svg class="copyright__logo" role="img" width="27" height="35">
               <use xlink:href="./img/sprite.svg#htmlacademy-logo"></use>
             </svg>
           </a>
