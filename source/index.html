@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -25,7 +27,7 @@
         </svg>
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <nav class="navigation navigation--close">
+      <nav class="navigation">
         <button class="navigation__toggle" type="button" aria-label="Закрыть меню">
           <svg class="navigation__icon" width="22" height="22" aria-hidden="true" focusable="false">
             <use xlink:href="./img/sprite.svg#nav-icon"></use>
@@ -72,6 +74,11 @@
                   <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="./img/advantages-city-desktop.webp 1x, ./img/advantages-city-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="./img/advantages-city-tablet.webp 1x, ./img/advantages-city-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset=".img/advantages-city.webp 1x, ./img/advantages-city@2x.webp 2x">
                   <source media="(min-width: 1200px)"
                     srcset="./img/advantages-city-desktop.jpg 1x, ./img/advantages-city-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
@@ -88,12 +95,14 @@
                 </li>
                 <li class="advantages__sublist-item advantages__sublist-item--food">
                   <h3 class="advantages__sublist-title">Еда</h3>
-                  <p class="advantages__sublist-description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
+                  <p class="advantages__sublist-description advantages__sublist-description--width">Всегда заказывайте
+                    фирменный бургер, Вы не разочаруетесь!
                   </p>
                 </li>
                 <li class="advantages__sublist-item advantages__sublist-item--souvenirs">
                   <h3 class="advantages__sublist-title">Сувениры</h3>
-                  <p class="advantages__sublist-description">Не только китайского, но и местного производства!</p>
+                  <p class="advantages__sublist-description advantages__sublist-description--souvenirs">Не только
+                    китайского, <br class="advantages__sublist-br"> но и местного производства!</p>
                 </li>
               </ul>
             </li>
@@ -104,6 +113,11 @@
                 <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="./img/advantages-bridge-desktop.webp 1x, ./img/advantages-bridge-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="./img/advantages-bridge-tablet.webp 1x, ./img/advantages-bridge-tablet@2x.webp 2x">
+                <source type="image/webp" srcset=".img/advantages-bridge.webp 1x, ./img/advantages-bridge@2x.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="./img/advantages-bridge-desktop.jpg 1x, ./img/advantages-bridge-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
@@ -141,9 +155,11 @@
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <div class="hotel-search__wrapper">
           <h2 class="hotel-search__title">Заинтересовались?</h2>
-          <p class="hotel-search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+          <p class="hotel-search__description">Укажите предполагаемые даты поездки,<br class="hotel-search__br">и мы
+            покажем
+            вам лучшие предложения
             гостиниц в Седоне</p>
-          <a class="hotel__search-link button" href="#">Найти Гостиницу</a>
+          <a class="hotel-search__link button" href="#">Найти Гостиницу</a>
         </div>
         <div class="map">
           <iframe class="map__iframe"
@@ -162,7 +178,8 @@
           <h2 class="visually-hidden">Мы в соцсетях</h2>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="HTML Academy вконтакте.">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"
+                aria-label="HTML Academy вконтакте.">
                 <svg class="social__icon" width="24" height="14">
                   <use xlink:href="./img/sprite.svg#vkontakte"></use>
                 </svg>
@@ -170,7 +187,8 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" aria-label="HTML Academy в телеграмме.">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"
+                aria-label="HTML Academy в телеграмме.">
                 <svg class="social__icon" width="22" height="18">
                   <use xlink:href="./img/sprite.svg#telegram"></use>
                 </svg>
@@ -178,7 +196,8 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" aria-label="HTML Academy на ютубе.">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+                aria-label="HTML Academy на ютубе.">
                 <svg class="social__icon" width="24" height="14">
                   <use xlink:href="./img/sprite.svg#youtube"></use>
                 </svg>
@@ -187,9 +206,9 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy.">
+        <div class="page-footer__copyright">
+          <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy.">
+            <span class="copyright__text">Разработано</span>
             <svg class="copyright__logo" role="img" width="27" height="35">
               <use xlink:href="./img/sprite.svg#htmlacademy-logo"></use>
             </svg>
